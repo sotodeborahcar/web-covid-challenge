@@ -50,18 +50,15 @@ const useStyles = makeStyles(() => ({
     flexGrow: 1,
     width: "100%",
     backgroundColor: "transparent",
+    color: "#fff",
   },
   tabs: {
     backgroundColor: "transparent",
     paddingBottom: 10,
-  },
-  tab: {
+    color: "#fff",
     "&:hover": {
-      transform: `scale(1.1)`,
       color: "#57ea9a",
-      backgroundColor: "transparent",
     },
-    color: "#ffffff",
   },
 }));
 
@@ -75,35 +72,36 @@ const TabsPanel = () => {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static" className={classes.tabs} color="primary">
+    <div>
+      <AppBar position="static" className={classes.root}>
         <Tabs
+          className={classes.tabs}
           value={value}
           onChange={handleChange}
           aria-label="simple tabs example"
-          indicatorColor="primary"
-          textColor="primary"
+          indicatorColor="red"
+          textColor="red"
         >
           <Tab
-            className={classes.tab}
+            className={classes.tabs}
             onClick={() => {
-              history.push("/");
+              history.push(`/`);
             }}
-            label="Home"
+            label="home"
             icon={<HomeIcon />}
             {...a11yProps(0)}
           />
           <Tab
-            className={classes.tab}
+            className={classes.tabs}
             onClick={() => {
               history.push(`/cases`);
             }}
-            label="Cases"
+            label="cases"
             icon={<SupervisorAccountIcon />}
             {...a11yProps(1)}
           />
           <Tab
-            className={classes.tab}
+            className={classes.tabs}
             onClick={() => {
               history.push(`/countries`);
             }}
@@ -112,7 +110,7 @@ const TabsPanel = () => {
             {...a11yProps(2)}
           />
           <Tab
-            className={classes.tab}
+            className={classes.tabs}
             onClick={() => {
               history.push(`/newInfect`);
             }}

@@ -16,7 +16,6 @@ import Footer from "../components/Footer";
 const useStyles = makeStyles(() => ({
   container: {
     flexGrow: 1,
-    // backgroundColor: theme.palette.background.paper,
     padding: 0,
   },
 }));
