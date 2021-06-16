@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
-import "../assets/css/Dashboard.css";
 import axios from "axios";
-import containerTotalCasos from "../components/containerTotalCasos";
+import ContainerTotalCasos from "../components/ContainerTotalCasos";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 import NavBar from "../components/NavBar";
@@ -14,6 +13,13 @@ import NewInfect from "./NewInfect";
 import Footer from "../components/Footer";
 
 const useStyles = makeStyles(() => ({
+  "@global": {
+    body: {
+      margin: 0,
+      padding: 0,
+      backgroundColor: "#5a605d1b",
+    },
+  },
   container: {
     flexGrow: 1,
     padding: 0,
@@ -34,7 +40,7 @@ const App = () => {
 
   return (
     <>
-      <containerTotalCasos.Provider
+      <ContainerTotalCasos.Provider
         value={{
           totalCasos: totalCasos,
           updateTotalCasos: (param) => setTotalCasos(param),
@@ -53,7 +59,7 @@ const App = () => {
             <Footer />
           </Container>
         </BrowserRouter>
-      </containerTotalCasos.Provider>
+      </ContainerTotalCasos.Provider>
     </>
   );
 };
