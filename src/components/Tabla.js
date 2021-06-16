@@ -17,7 +17,7 @@ import ReactExport from "react-export-excel";
 const columns = [
   { id: "first_name", label: "FIRST NAME", minWidth: 100 },
   { id: "last_name", label: "LAST NAME", minWidth: 100 },
-  { id: "country", label: "COUNTRY", minWidth: 200 },
+  { id: "country", label: "COUNTRY", minWidth: 150 },
   { id: "age", label: "AGE", minWidth: 50 },
   { id: "gender", label: "GENDER", minWidth: 50 },
 ];
@@ -28,20 +28,38 @@ const createData = (first_name, last_name, country, age, gender, live) => {
 
 const useStyles = makeStyles({
   root: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "flex-end",
-    minWidth: "75vw",
+    // display: "flex",
+    // flexDirection: "column",
+    // justifyContent: "center",
+    // alignItems: "flex-end",
+    // minWidth: "75vw",
+    // borderColor: "red",
+    // borderStyle: "1px solid red",
   },
   container: {
     width: "100%",
   },
+  row: {
+    backgroundColor: "#57ea9a",
+  },
   text1: {
     color: "red",
+    marginRight: "10px",
   },
   text2: {
     color: "#01081c",
+    marginLeft: "10px",
+  },
+  textInfo: {
+    margin: "10px",
+    display: "inline-flex",
+    alignSelf: "end",
+    fontWeight: "bold",
+    textTransform: "uppercase",
+  },
+  tablaExcel: {
+    margin: 15,
+    backgroundColor: "#57ea9a",
   },
 });
 
@@ -88,6 +106,7 @@ const Tabla = () => {
       <div className={classes.switchAge}>
         <SwitchAge queryParams={queryParams} setQueryParams={setQueryParams} />
       </div>
+
       <Paper className={classes.container}>
         <TableContainer>
           <Table stickyHeader aria-label="sticky table">
@@ -95,6 +114,7 @@ const Tabla = () => {
               <TableRow>
                 {columns.map((column) => (
                   <TableCell
+                    className={classes.row}
                     key={column.id}
                     align={column.align}
                     style={{ minWidth: column.minWidth }}
@@ -146,20 +166,24 @@ const Tabla = () => {
           onChangeRowsPerPage={handleChangeRowsPerPage}
         />
       </Paper>
+
       <div className={classes.textInfo}>
-        <Typography className={classes.text1} variant="h6" gutterBottom>
+        <Typography className={classes.text1} variant="h7" gutterBottom>
           Pacientes fallecidos
         </Typography>
-        <Typography className={classes.text2} variant="h6" gutterBottom>
+
+        <Typography className={classes.text2} variant="h7" gutterBottom>
           Pacientes vivos
         </Typography>
       </div>
-      {/* <div className={classes.tablaExcel}>
-        <ReactExport />
-      </div> */}
+
       <div>
-        <ExcelFile element={<button>Download Data With Styles</button>}>
-          <ExcelSheet name="Organization" />
+        <ExcelFile
+          element={
+            <button className={classes.tablaExcel}>Export to Excel</button>
+          }
+        >
+          <ExcelSheet name="CasosPositivos" />
         </ExcelFile>
       </div>
     </Container>

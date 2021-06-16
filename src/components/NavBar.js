@@ -1,15 +1,13 @@
 import React from "react";
-// import axios from "axios";
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Toolbar, IconButton } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
 import Imagen from "./Imagen";
 import { useHistory } from "react-router-dom";
-// import { Hidden } from "@material-ui/core";
 import Hidden from "@material-ui/core/Hidden";
 import TabsPanel from "./TabsPanel";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
     backgroundColor: "#01081c",
@@ -58,9 +56,6 @@ const NavBar = () => {
                 <MenuIcon />
               </IconButton>
             </Hidden>
-            {/* <Typography variant="h6" className={classes.title}>
-              COVID-19
-            </Typography> */}
 
             <Hidden smDown>
               <TabsPanel />

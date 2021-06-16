@@ -11,6 +11,7 @@ import Home from "./Home";
 import Cases from "./Cases";
 import Countries from "./Countries";
 import NewInfect from "./NewInfect";
+import Footer from "../components/Footer";
 
 const useStyles = makeStyles(() => ({
   container: {
@@ -49,7 +50,8 @@ const App = () => {
               <Route exact path="/countries" component={Countries} />
               <Route exact path="/newInfect" component={NewInfect} />
             </Switch>
-            {/* <Footer /> */}
+
+            <Footer />
           </Container>
         </BrowserRouter>
       </containerTotalCasos.Provider>
