@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import { AppBar, Toolbar } from "@material-ui/core";
 import { Typography } from "@material-ui/core";
 import Hidden from "@material-ui/core/Hidden";
+import { Container } from "@material-ui/core";
 import Sidebar from "./Sidebar";
 import TabsPanel from "./TabsPanel";
+import ContainerTotalCasos from "./ContainerTotalCasos";
 
 const useStyles = makeStyles(() => ({
   root: {
+    display: "flex",
+    justifyContent: "space-between",
+
     flexGrow: 1,
     backgroundColor: "#01081c",
   },
@@ -18,7 +23,14 @@ const useStyles = makeStyles(() => ({
       transform: `scale(1.2)`,
     },
   },
-
+  casos: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    maxWidth: 150,
+    padding: 4,
+    border: "1px solid #57ea9a",
+  },
   a: {
     textDecoration: "none",
     color: "#57ea9a",
@@ -29,11 +41,12 @@ const useStyles = makeStyles(() => ({
 
 const NavBar = () => {
   const classes = useStyles();
+  const { totalCasos } = useContext(ContainerTotalCasos);
 
   return (
     <div>
-      <AppBar position="sticky" className={classes.root}>
-        <Toolbar>
+      <AppBar position="sticky">
+        <Toolbar className={classes.root}>
           <Hidden mdUp>
             <Sidebar />
           </Hidden>
@@ -41,6 +54,12 @@ const NavBar = () => {
           <Hidden smDown>
             <TabsPanel />
           </Hidden>
+
+          <Container className={classes.casos}>
+            <Typography align="center" variant="h8" gutterBottom>
+              {`Casos de Covid-19 : ${totalCasos} personas`}
+            </Typography>
+          </Container>
 
           <Typography className={classes.logo}>
             <a

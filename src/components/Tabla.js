@@ -27,15 +27,7 @@ const createData = (first_name, last_name, country, age, gender, live) => {
 };
 
 const useStyles = makeStyles({
-  root: {
-    // display: "flex",
-    // flexDirection: "column",
-    // justifyContent: "center",
-    // alignItems: "flex-end",
-    // minWidth: "75vw",
-    // borderColor: "red",
-    // borderStyle: "1px solid red",
-  },
+  root: {},
   container: {
     width: "100%",
   },

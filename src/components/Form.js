@@ -58,13 +58,6 @@ const Form = () => {
   const { updateTotalCasos } = useContext(ContainerTotalCasos);
   let validForm = {};
 
-  // const handleOpen = () => {
-  //   setOpen(true);
-  // };
-  // const handleClose = () => {
-  //   setOpen(false);
-  // };
-
   const parseForm = () => {
     form.female === "Femenino"
       ? (validForm = {
