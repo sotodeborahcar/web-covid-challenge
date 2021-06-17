@@ -5,7 +5,7 @@ datos de varias maneras.
 
 ## Deploy
 
-[Create React App](https://github.com/facebook/create-react-app).
+[Pagina Web](https://covid-challenge-soto.netlify.app).
 
 ### `Cómo levantar el proyecto:`
 

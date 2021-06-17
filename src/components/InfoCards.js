@@ -56,6 +56,7 @@ const InfoCards = () => {
             <a
               href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/advice-for-public"
               target="_blank"
+              rel="noreferrer"
             >
               Learn More
             </a>
@@ -87,6 +88,7 @@ const InfoCards = () => {
             <a
               href="https://who.maps.arcgis.com/apps/webappviewer/index.html?id=2203b04c3a5f486685a15482a0d97a87&extent=-17277700.8881%2C-1043174.5225%2C-1770156.5897%2C6979655.9663%2C102100"
               target="_blank"
+              rel="noreferrer"
             >
               Learn More
             </a>
@@ -118,6 +120,7 @@ const InfoCards = () => {
             <a
               href="https://www.who.int/es/news-room/articles-detail/public-health-considerations-while-resuming-international-travel"
               target="_blank"
+              rel="noreferrer"
             >
               Learn More
             </a>
@@ -149,6 +152,7 @@ const InfoCards = () => {
             <a
               href="https://www.who.int/es/emergencies/diseases/novel-coronavirus-2019/technical-guidance"
               target="_blank"
+              rel="noreferrer"
             >
               Learn More
             </a>

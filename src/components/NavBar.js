@@ -65,6 +65,7 @@ const NavBar = () => {
             <a
               href="https://blockinar.com/#/en"
               target="_blank"
+              rel="noreferrer"
               className={classes.a}
             >
               BLOCKINAR
