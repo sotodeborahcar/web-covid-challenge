@@ -9,7 +9,7 @@ import { CardContent, FormControl } from "@material-ui/core";
 import InputLabel from "@material-ui/core/InputLabel";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import Button from "@material-ui/core/Button";
-import ContainerTotalCasos from "./ContainerTotalCasos";
+import containerTotalCasos from "./containerTotalCasos";
 
 const startForm = {
   first_name: "",
@@ -55,7 +55,7 @@ const Form = () => {
   const [form, setForm] = React.useState(startForm);
   const [countries, setCountries] = useState([]);
   // const [open, setOpen] = React.useState(false);
-  const { updateTotalCasos } = useContext(ContainerTotalCasos);
+  const { updateTotalCasos } = useContext(containerTotalCasos);
   let validForm = {};
 
   const parseForm = () => {

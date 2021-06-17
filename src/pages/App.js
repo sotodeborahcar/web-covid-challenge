@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import "fontsource-roboto";
 import axios from "axios";
-import ContainerTotalCasos from "../components/ContainerTotalCasos";
+import ContainerTotalCasos from "../components/containerTotalCasos";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Container from "@material-ui/core/Container";
 import NavBar from "../components/NavBar";
