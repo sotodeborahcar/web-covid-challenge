@@ -5,7 +5,7 @@ datos de varias maneras.
 
 ## Deploy
 
-[Pagina Web](https://covid-challenge-soto.netlify.app).
+[Pagina Web](http://covid-challenge-soto.netlify.app).
 
 ### `Cómo levantar el proyecto:`
 
