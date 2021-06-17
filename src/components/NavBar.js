@@ -6,7 +6,7 @@ import Hidden from "@material-ui/core/Hidden";
 import { Container } from "@material-ui/core";
 import Sidebar from "./Sidebar";
 import TabsPanel from "./TabsPanel";
-import ContainerTotalCasos from "./ContainerTotalCasos";
+import containerTotalCasos from "./containerTotalCasos";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -41,7 +41,7 @@ const useStyles = makeStyles(() => ({
 
 const NavBar = () => {
   const classes = useStyles();
-  const { totalCasos } = useContext(ContainerTotalCasos);
+  const { totalCasos } = useContext(containerTotalCasos);
 
   return (
     <div>

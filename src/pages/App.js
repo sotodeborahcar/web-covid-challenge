@@ -40,7 +40,7 @@ const App = () => {
 
   return (
     <>
-      <ContainerTotalCasos.Provider
+      <containerTotalCasos.Provider
         value={{
           totalCasos: totalCasos,
           updateTotalCasos: (param) => setTotalCasos(param),
@@ -59,7 +59,7 @@ const App = () => {
             <Footer />
           </Container>
         </BrowserRouter>
-      </ContainerTotalCasos.Provider>
+      </containerTotalCasos.Provider>
     </>
   );
 };
