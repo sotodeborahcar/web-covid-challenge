@@ -9,7 +9,7 @@ datos de varias maneras.
 
 ### `Cómo levantar el proyecto:`
 
-1. git clone ""
+1. git clone "https://github.com/sotodeborahcar/web-covid-challenge"
 2. cd covid-challenge
 3. npm install
 
