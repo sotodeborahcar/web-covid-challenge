@@ -34,7 +34,7 @@ const Sidebar = () => {
     <div>
       <Drawer
         anchor="left"
-        className={{ paper: classes.drawer }}
+        // className={{ paper: classes.drawer }}
         onClose={() => setOpenDrawer(false)}
         open={openDrawer}
         onOpen={() => setOpenDrawer(true)}

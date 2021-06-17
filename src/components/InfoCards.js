@@ -35,10 +35,10 @@ const InfoCards = () => {
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="Contemplative Reptile"
+            alt="imagen"
             height="300px"
             image="https://i.pinimg.com/736x/3e/4e/13/3e4e13cb5600254cffb5276806ac7277.jpg"
-            title="Contemplative Reptile"
+            title="como protegerse del covid-19"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -67,10 +67,10 @@ const InfoCards = () => {
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="Contemplative Reptile"
+            alt="imagen"
             height="300"
             image="https://img2.rtve.es/i/?w=1600&i=1615998979529.jpg"
-            title="Contemplative Reptile"
+            title="situacion de la pandemia en america"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">
@@ -98,10 +98,10 @@ const InfoCards = () => {
         <CardActionArea>
           <CardMedia
             component="img"
-            alt="Contemplative Reptile"
+            alt="imagen"
             height="300"
             image="https://www.intermundial.es/blog/wp-content/uploads/2020/06/coronavirus-viajes-fuera-espana-este-verano.jpg"
-            title="Contemplative Reptile"
+            title="viajes en pandemia"
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="h2">

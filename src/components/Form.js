@@ -54,7 +54,7 @@ const Form = () => {
   const classes = useStyles();
   const [form, setForm] = React.useState(startForm);
   const [countries, setCountries] = useState([]);
-  const [open, setOpen] = React.useState(false);
+  // const [open, setOpen] = React.useState(false);
   const { updateTotalCasos } = useContext(ContainerTotalCasos);
   let validForm = {};
 
@@ -82,7 +82,7 @@ const Form = () => {
       .then((res) => {
         console.log(res);
         updateTotalCasos("");
-        setOpen(true);
+        // setOpen(true);
         setForm(startForm);
       });
   };
@@ -130,7 +130,6 @@ const Form = () => {
               helperText="*Campo obligatorio"
               onChange={handleChange}
               value={form.first_name}
-              id="first_name"
               fullWidth
               required
             />
@@ -143,7 +142,6 @@ const Form = () => {
               helperText="*Campo obligatorio"
               onChange={handleChange}
               value={form.last_name}
-              id="last_name"
               fullWidth
               required
             />

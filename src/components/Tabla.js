@@ -160,11 +160,11 @@ const Tabla = () => {
       </Paper>
 
       <div className={classes.textInfo}>
-        <Typography className={classes.text1} variant="h7" gutterBottom>
+        <Typography className={classes.text1} variant="body1" gutterBottom>
           Pacientes fallecidos
         </Typography>
 
-        <Typography className={classes.text2} variant="h7" gutterBottom>
+        <Typography className={classes.text2} variant="body1" gutterBottom>
           Pacientes vivos
         </Typography>
       </div>

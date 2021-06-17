@@ -39,6 +39,7 @@ const Footer = () => {
           className={classes.a}
           href="https://github.com/sotodeborahcar"
           target="_blank"
+          rel="noreferrer"
         >
           <GitHubIcon
             className={classes.icon}
@@ -53,6 +54,7 @@ const Footer = () => {
           className={classes.a}
           href="https://www.linkedin.com/in/deborah-carolina-soto-140987/"
           target="_blank"
+          rel="noreferrer"
         >
           <LinkedInIcon
             className={classes.icon}

@@ -56,7 +56,7 @@ const NavBar = () => {
           </Hidden>
 
           <Container className={classes.casos}>
-            <Typography align="center" variant="h8" gutterBottom>
+            <Typography align="center" variant="caption" gutterBottom>
               {`Casos de Covid-19 : ${totalCasos} personas`}
             </Typography>
           </Container>
