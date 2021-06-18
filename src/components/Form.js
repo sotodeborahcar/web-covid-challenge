@@ -76,7 +76,7 @@ const Form = () => {
     console.log(validForm);
     axios
       .post(
-        "http://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/infected",
+        "https://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/infected",
         validForm
       )
       .then((res) => {
@@ -102,7 +102,7 @@ const Form = () => {
   };
 
   useEffect(() => {
-    const searchNewDates = `http://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/countries`;
+    const searchNewDates = `https://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/countries`;
     axios.get(searchNewDates).then((res) => {
       setCountries(res.data);
     });

@@ -74,7 +74,7 @@ const Tabla = () => {
     setPage(0);
   };
   useEffect(() => {
-    const searchInfected = `http://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/infected${queryParams}`;
+    const searchInfected = `https://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/infected${queryParams}`;
     axios.get(searchInfected).then((res) => {
       let newRows = res.data.map((res) => {
         let genderOpc = JSON.stringify(res.female);

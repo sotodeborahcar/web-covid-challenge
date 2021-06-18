@@ -31,7 +31,7 @@ const App = () => {
   const [totalCasos, setTotalCasos] = useState("");
 
   useEffect(() => {
-    const searchInfected = `http://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/infected`;
+    const searchInfected = `https://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/infected`;
     axios.get(searchInfected).then((res) => {
       console.log(res.data);
       setTotalCasos(res.data.length);

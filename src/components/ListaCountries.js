@@ -26,7 +26,7 @@ const ListaCountries = () => {
   const [results, setResults] = useState([]);
 
   useEffect(() => {
-    const searchCountries = `http://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/countries`;
+    const searchCountries = `https://5e693ec6d426c00016b7ec9e.mockapi.io/CV1/countries`;
     axios.get(searchCountries).then((res) => {
       setResults(res.data);
     });
